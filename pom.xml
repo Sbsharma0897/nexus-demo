@@ -17,9 +17,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 <!--    <maven.compiler.source>11</maven.compiler.source>-->
 <!--    <maven.compiler.target>11</maven.compiler.target>-->
-    <sonar.host.url>http://54.167.102.153:9000/</sonar.host.url>
-    <sonar.login>admin</sonar.login>
-    <sonar.password>apple</sonar.password>
+<!--    <sonar.host.url>http://54.167.102.153:9000/</sonar.host.url>-->
+<!--    <sonar.login>admin</sonar.login>-->
+<!--    <sonar.password>apple</sonar.password>-->
   </properties>
 
   <dependencies>
@@ -35,27 +35,14 @@
     <snapshotRepository>
       <id>sandeep-nexus</id>
       <name> Nexus Demo Project Repo</name>
-      <url>http://localhost:8081/repository/sandeep-remote-repo/</url>
+      <url>http://52.23.175.101:8081/repository/sandeep-snapshot/</url>
     </snapshotRepository>
     <repository>
       <id>sandeep-nexus</id>
       <name> Nexus Demo Project Repo</name>
-      <url>http://localhost:8081/repository/sandeep-remote-repo/</url>
+      <url>http://52.23.175.101:8081/repository/sandeep-release/</url>
     </repository>
   </distributionManagement>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version>
-      </plugin>
-      <plugin>
-        <groupId>org.sonarsource.scanner.maven</groupId>
-        <artifactId>sonar-maven-plugin</artifactId>
-      </plugin>
-    </plugins>
-  </build>
 
 
 </project>
