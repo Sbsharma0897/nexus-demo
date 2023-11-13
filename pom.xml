@@ -34,12 +34,12 @@
     <snapshotRepository>
       <id>sandeep-nexus</id>
       <name> Nexus Demo Project Repo</name>
-      <url>http://52.23.175.101:8081/repository/sandeep-snapshot/</url>
+      <url>http://172.31.92.5:8081/repository/sandeep-snapshot/</url>
     </snapshotRepository>
     <repository>
       <id>sandeep-nexus</id>
       <name> Nexus Demo Project Repo</name>
-      <url>http://52.23.175.101:8081/repository/sandeep-release/</url>
+      <url>http://172.31.92.5:8081/repository/sandeep-release/</url>
     </repository>
   </distributionManagement>
 <build>
