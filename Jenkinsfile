@@ -15,12 +15,8 @@ pipeline {
 
 
     stages {
-        stage('checkOutCode') {
-            steps{
-                 git branch: 'dev', credentialsId: 'ab4323c5-ab85-4eb3-9bf0-219843e590de',
-                 url: 'https://github.com/Sbsharma0897/nexus-demo/' 
-                 }
-            }
+
+
         stage('build') {
             steps{
                  sh "mvn clean package"
