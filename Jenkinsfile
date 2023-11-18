@@ -10,7 +10,7 @@ pipeline {
     //     NAME = "${pom.artifactId}"  
     //     VERSION = "${pom.properties.revision}"
     //     ARTIFACT = "${NAME_ACTUAL}-${VERSION}"
-
+//df
      }
 
 
